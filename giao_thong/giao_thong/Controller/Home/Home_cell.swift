@@ -14,7 +14,18 @@ class Home_cell: UITableViewCell {
     @IBOutlet weak var title_home_cell: UILabel!
     @IBOutlet weak var text_view_home_cell: UITextView!
     @IBOutlet weak var price_home_cell: UILabel!
-    var rule_delegate: rule?
+    var rule_delegate: rule? {
+        didSet {
+            guard let txt_price = rule_delegate?.price, let img_text = rule_delegate?.img else {
+                return
+            }
+            self.image_cell_home.image = UIImage(named: img_text)
+            self.title_home_cell.text = rule_delegate?.title
+            self.text_view_home_cell.text = rule_delegate?.des
+            self.price_home_cell.text = "\(txt_price)"
+            
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -28,17 +39,11 @@ class Home_cell: UITableViewCell {
         title_home_cell_setup_autolayout()
         text_view_home_cell_setup_autolayout()
         price_home_cell_setup_autolayout()
-        get_data_rutle_from_home()
+//        get_data_rutle_from_home()
     }
     
     func get_data_rutle_from_home(){
-        guard let txt_price = rule_delegate?.price else {
-            return
-        }
-        self.image_cell_home.image = UIImage(named: rule_delegate!.img)
-        self.title_home_cell.text = rule_delegate?.title
-        self.text_view_home_cell.text = rule_delegate?.des
-        self.price_home_cell.text = "\(txt_price)"
+
     }
     
     //setup - price
@@ -62,7 +67,7 @@ class Home_cell: UITableViewCell {
         
         text_view_home_cell.translatesAutoresizingMaskIntoConstraints = false
         text_view_home_cell.topAnchor.constraint(equalTo: title_home_cell.bottomAnchor, constant: 4).isActive = true
-        text_view_home_cell.leftAnchor.constraint(equalTo: image_cell_home.rightAnchor, constant: 8).isActive = true
+        text_view_home_cell.leftAnchor.constraint(equalTo: image_cell_home.rightAnchor, constant: 0).isActive = true
         text_view_home_cell.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0).isActive = true
         text_view_home_cell.heightAnchor.constraint(equalToConstant: 36).isActive = true
     }

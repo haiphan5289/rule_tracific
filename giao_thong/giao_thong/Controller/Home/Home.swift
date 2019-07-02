@@ -30,8 +30,37 @@ class Home: UITableViewController {
         menu_bar_setup()
         navigation_bar_setup()
         seach_view_setup()
+//        get_data_from_json()
     }
     
+    func get_data_from_json(){
+        let path = Bundle.main.path(forResource: "tracific", ofType:"json")
+        let url = URL(fileURLWithPath: path!)
+        do {
+             let data = try Data(contentsOf: url, options: .mappedIfSafe)
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! NSArray
+                //cách 1
+                for i in json as! [[String:Any]]{
+//                    let text: String = (i as! NSDictionary).value(forKey: "des") as! String
+                    let title = i["title"] as! String
+                    let des = i["des"] as! String
+                    let price = i["price"] as! Int
+                    let img = i["img"] as! String
+                    let data_json: rule = rule(img: img, title: title, des: des, price: price)
+                    self.array_rule.append(data_json)
+                    self.tb_home.reloadData()
+                }
+                
+            }catch let err as NSError {
+                print(err)
+            }
+
+        } catch let err as NSError {
+            print(err)
+        }
+       
+    }
     
     func seach_view_setup(){
         search_view_home = search_view()
@@ -88,7 +117,6 @@ class Home: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: indentifier, for: indexPath) as! Home_cell
         cell.rule_delegate = array_rule[indexPath.row]
         cell.imlement_code()
-
         return cell
     }
 

@@ -26,7 +26,7 @@ class model_rule {
         var array_rule_temp: [rule] = [rule]()
         
         let rule1: rule = rule(img: "search", title: "AAAAAAAAAA", des: "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", price: 10)
-        let rule2: rule = rule(img: "search", title: "AAAAAAAAAA", des: "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", price: 10)
+        let rule2: rule = rule(img: "search", title: "BBBBBBBBBBb", des: "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", price: 10)
         
         array_rule_temp.append(rule1)
         array_rule_temp.append(rule2)
