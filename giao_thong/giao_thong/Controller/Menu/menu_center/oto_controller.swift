@@ -1,23 +1,25 @@
 //
-//  Home.swift
+//  oto_controller.swift
 //  giao_thong
 //
-//  Created by HaiPhan on 7/2/19.
+//  Created by HaiPhan on 7/3/19.
 //  Copyright © 2019 HaiPhan. All rights reserved.
 //
 
 import UIKit
 
-let indentifier = "Home_cell"
-class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
+let oto_text = "cell"
 
-//    @IBOutlet weak var seach: UISearchBar!
-//    @IBOutlet weak var menu_bar: UIBarButtonItem!
+class oto_controller: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    
+    //    @IBOutlet weak var seach: UISearchBar!
+    //    @IBOutlet weak var menu_bar: UIBarButtonItem!
     var seach: UISearchBar!
     var navi_bar_home: UINavigationBar!
     var search_view_home: search_view!
     var array_rule: [rule] = [rule]()
-//    @IBOutlet var tb_home: UITableView!
+    //    @IBOutlet var tb_home: UITableView!
     var tb_home: UITableView!
     var filter_array: [rule] = [rule]()
     //tạo 1 cờ để biết khi nào đang search
@@ -27,14 +29,14 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         imlement_code()
         tb_home.delegate = self
         tb_home.dataSource = self
-//        seach.delegate = self
+        //        seach.delegate = self
         seach.delegate = self
         tb_home.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tb_home.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        tb_home.register(Home_cell.self, forCellReuseIdentifier: indentifier)
-//        let model = model_rule()
-//        array_rule = model.create_rule()
-
+        tb_home.register(oto_cell.self, forCellReuseIdentifier: oto_text)
+        //        let model = model_rule()
+        //        array_rule = model.create_rule()
+        
     }
     
     func imlement_code(){
@@ -42,7 +44,7 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         navigation_bar_setup()
         seach_bar_autolayout()
         tb_home_autolayout()
-//        seach_view_setup()
+        //        seach_view_setup()
         get_data_from_json()
     }
     
@@ -52,36 +54,36 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.tb_home.reloadData()
             return self.array_rule
         }
-//        array_rule = api_service.share.get_data_home()
-//        self.tb_home.reloadData()
-//        array_rule = api_service.share.get_data_home()
-//        self.tb_home.reloadData()
-//        let path = Bundle.main.path(forResource: "Home", ofType:"json")
-//        let url = URL(fileURLWithPath: path!)
-//        do {
-//             let data = try Data(contentsOf: url, options: .mappedIfSafe)
-//            do {
-//                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! NSArray
-//                //cách 1
-//                for i in json as! [[String:Any]]{
-////                    let text: String = (i as! NSDictionary).value(forKey: "des") as! String
-//                    let title = i["title"] as! String
-//                    let des = i["des"] as! String
-//                    let price = i["price"] as! Int
-//                    let img = i["img"] as! String
-//                    let data_json: rule = rule(img: img, title: title, des: des, price: price)
-//                    self.array_rule.append(data_json)
-//                    self.tb_home.reloadData()
-//                }
-//
-//            }catch let err as NSError {
-//                print(err)
-//            }
-//
-//        } catch let err as NSError {
-//            print(err)
-//        }
-       
+        //        array_rule = api_service.share.get_data_home()
+        //        self.tb_home.reloadData()
+        //        array_rule = api_service.share.get_data_home()
+        //        self.tb_home.reloadData()
+        //        let path = Bundle.main.path(forResource: "Home", ofType:"json")
+        //        let url = URL(fileURLWithPath: path!)
+        //        do {
+        //             let data = try Data(contentsOf: url, options: .mappedIfSafe)
+        //            do {
+        //                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! NSArray
+        //                //cách 1
+        //                for i in json as! [[String:Any]]{
+        ////                    let text: String = (i as! NSDictionary).value(forKey: "des") as! String
+        //                    let title = i["title"] as! String
+        //                    let des = i["des"] as! String
+        //                    let price = i["price"] as! Int
+        //                    let img = i["img"] as! String
+        //                    let data_json: rule = rule(img: img, title: title, des: des, price: price)
+        //                    self.array_rule.append(data_json)
+        //                    self.tb_home.reloadData()
+        //                }
+        //
+        //            }catch let err as NSError {
+        //                print(err)
+        //            }
+        //
+        //        } catch let err as NSError {
+        //            print(err)
+        //        }
+        
     }
     
     //setup - tb home
@@ -102,9 +104,9 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         seach.barTintColor = UIColor(red: 230/255, green: 31/255, blue: 32/255, alpha: 1)
         seach.layer.borderColor = UIColor(red: 230/255, green: 31/255, blue: 32/255, alpha: 1).cgColor
         seach.layer.borderWidth = 10
-//        let textFieldInsideUISearchBar = seach.value(forKey: "searchField") as? UITextField
-//        textFieldInsideUISearchBar?.borderStyle = .roundedRect
-//        textFieldInsideUISearchBar?.backgroundColor = UIColor.black
+        //        let textFieldInsideUISearchBar = seach.value(forKey: "searchField") as? UITextField
+        //        textFieldInsideUISearchBar?.borderStyle = .roundedRect
+        //        textFieldInsideUISearchBar?.backgroundColor = UIColor.black
         seach.placeholder = "Nhập lỗi bạn muốn tìm..."
         self.view.addSubview(seach)
         
@@ -115,27 +117,27 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         seach.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
-//    func seach_view_setup(){
-//        search_view_home = search_view()
-//        search_view_home.backgroundColor = UIColor.cyan
-//        self.view.addSubview(search_view_home)
-//        search_view_home.translatesAutoresizingMaskIntoConstraints = false
-//        search_view_home.bottomAnchor.constraint(equalTo: navi_bar_home.topAnchor, constant: 0).isActive = true
-//        search_view_home.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
-//        search_view_home.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: 0).isActive = true
-//        search_view_home.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    //    func seach_view_setup(){
+    //        search_view_home = search_view()
+    //        search_view_home.backgroundColor = UIColor.cyan
+    //        self.view.addSubview(search_view_home)
+    //        search_view_home.translatesAutoresizingMaskIntoConstraints = false
+    //        search_view_home.bottomAnchor.constraint(equalTo: navi_bar_home.topAnchor, constant: 0).isActive = true
+    //        search_view_home.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
+    //        search_view_home.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: 0).isActive = true
+    //        search_view_home.heightAnchor.constraint(equalToConstant: 50).isActive = true
     
-//        tb_home.translatesAutoresizingMaskIntoConstraints = false
-//        tb_home.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true
-//        tb_home.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
-//        tb_home.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
-//        tb_home.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
-//    }
+    //        tb_home.translatesAutoresizingMaskIntoConstraints = false
+    //        tb_home.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true
+    //        tb_home.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
+    //        tb_home.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
+    //        tb_home.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
+    //    }
     
     //setup navigation bar
     func navigation_bar_setup(){
         UIApplication.shared.statusBarStyle = .lightContent
-
+        
         //setup navigation bar
         navi_bar_home.isTranslucent = false
         navi_bar_home.barTintColor = UIColor(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
@@ -154,14 +156,14 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         status_bar.backgroundColor = UIColor(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
         self.view.addSubview(status_bar)
         
-//        self.navigationController?.navigationBar.isTranslucent = false
-//        self.navigationController?.navigationBar.barTintColor = UIColor(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
-//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.white]
-//        self.navigationController?.navigationBar.topItem?.title = "Xử phạt giao thông"
-//
-//        //remove border
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        //        self.navigationController?.navigationBar.isTranslucent = false
+        //        self.navigationController?.navigationBar.barTintColor = UIColor(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
+        //        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.white]
+        //        self.navigationController?.navigationBar.topItem?.title = "Xử phạt giao thông"
+        //
+        //        //remove border
+        //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        //        self.navigationController?.navigationBar.shadowImage = UIImage()
         
     }
     var left_button: UIBarButtonItem!
@@ -179,19 +181,19 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         img = UIImageView()
         //alwaysTemplate tincolot của img mới wroj
         img.image = UIImage(named: "menu")?.withRenderingMode(.alwaysTemplate)
-//        img.tintColor = UIColor.white
+        //        img.tintColor = UIColor.white
         
         left_button = UIBarButtonItem(image: img.image, style: .plain, target: self, action: #selector(show_menu))
         navi_item.leftBarButtonItem = left_button
         navi_bar_home.setItems([navi_item], animated: true)
         
-//        menu_bar.title = "hihi"
-//        menu_bar.image = UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal)
-//        menu_bar.target = self.revealViewController()
-//        menu_bar.action = #selector(self.revealViewController().revealToggle(_:))
-//        self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
-//        //chỉnh lại width của left menu
-//        self.revealViewController()?.rearViewRevealWidth = 100
+        //        menu_bar.title = "hihi"
+        //        menu_bar.image = UIImage(named: "menu")?.withRenderingMode(.alwaysOriginal)
+        //        menu_bar.target = self.revealViewController()
+        //        menu_bar.action = #selector(self.revealViewController().revealToggle(_:))
+        //        self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
+        //        //chỉnh lại width của left menu
+        //        self.revealViewController()?.rearViewRevealWidth = 100
     }
     
     @objc func show_menu(){
@@ -199,29 +201,27 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         left_button.action = #selector(self.revealViewController()?.revealToggle(_:))
         self.view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
         self.revealViewController()?.rearViewRevealWidth = 100
-        self.view.alpha = 0.5
-        
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-                //kiểm tra nếu đang seach thì hiển thị mảng fillter
+        //kiểm tra nếu đang seach thì hiển thị mảng fillter
         if  isSearching {
             return filter_array.count
         } else {
             return array_rule.count
         }
-//        return array_rule.count
+        //        return array_rule.count
     }
-
-
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tb_home.dequeueReusableCell(withIdentifier: indentifier, for: indexPath) as! Home_cell
+        let cell = tb_home.dequeueReusableCell(withIdentifier: oto_text, for: indexPath) as! oto_cell
         //kiểm tra nếu đang seach thì hiển thị mảng fillter
         if isSearching {
             cell.rule_delegate = filter_array[indexPath.row]
@@ -233,11 +233,11 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
             cell.imlement_code()
             return cell
         }
-//                    cell.rule_delegate = array_rule[indexPath.row]
-//                    cell.imlement_code()
-//                    return cell
+        //                    cell.rule_delegate = array_rule[indexPath.row]
+        //                    cell.imlement_code()
+        //                    return cell
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -249,7 +249,7 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 
 }
-extension Home: UISearchBarDelegate {
+extension oto_controller: UISearchBarDelegate {
     //khi user tap vào search se tạo ra 1 mảng fillter
     //nếu k nhập thì fillter = array
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -258,21 +258,3 @@ extension Home: UISearchBarDelegate {
         self.tb_home.reloadData()
     }
 }
-//extension Home: UISearchResultsUpdating {
-//    func updateSearchResults(for searchController: UISearchController) {
-////        filteredTableData.removeAll(keepingCapacity: false)
-////        let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
-////        let array = (array_rule as NSArray).filtered(using: searchPredicate)
-////        filteredTableData = array as! [rule]
-////        self.tableView.reloadData()
-//        
-////        let searchTerm = searchController.searchBar.text!
-////        let array = array_rule.filter { result in
-////            return result.title.contains(searchTerm)
-////        }
-////        filteredTableData = array as! [rule]
-////        self.tb_home.reloadData()
-//    }
-//    
-//    
-//}

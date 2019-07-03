@@ -14,6 +14,7 @@ class search_view: UIView {
     var view_container: UIView!
     override init(frame: CGRect) {
         super.init(frame: frame)
+//        self.frame = CGRect(x: 0, y: -50, width: self.frame.width , height: 50)
         backgroundColor = UIColor(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
         setup_view()
     }
@@ -49,7 +50,7 @@ class search_view: UIView {
         txt_search.leftAnchor.constraint(equalTo: img_search.rightAnchor, constant: 8).isActive = true
         txt_search.topAnchor.constraint(equalTo: view_container.topAnchor, constant: 0).isActive = true
         txt_search.rightAnchor.constraint(equalTo: view_container.rightAnchor, constant: 0).isActive = true
-        txt_search.bottomAnchor.constraint(equalTo: view_container.bottomAnchor, constant: 0).isActive = true
+        txt_search.heightAnchor.constraint(equalTo: view_container.heightAnchor, constant: 0).isActive = true
     }
     
     //setup- view

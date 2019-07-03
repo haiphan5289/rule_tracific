@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930536FC22CC5508005A1A5F /* api_service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930536FB22CC5508005A1A5F /* api_service.swift */; };
+		930536FF22CC590D005A1A5F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930536FE22CC590D005A1A5F /* Menu.swift */; };
+		9305370122CC59B6005A1A5F /* Menu_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305370022CC59B6005A1A5F /* Menu_cell.swift */; };
+		9305370322CC6059005A1A5F /* Home_detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305370222CC6059005A1A5F /* Home_detail.swift */; };
+		9305370622CC86BC005A1A5F /* title_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305370522CC86BC005A1A5F /* title_cell.swift */; };
+		9305370822CC896B005A1A5F /* object_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305370722CC896B005A1A5F /* object_cell.swift */; };
+		9305370A22CC915A005A1A5F /* des_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305370922CC915A005A1A5F /* des_cell.swift */; };
+		9305370C22CC9511005A1A5F /* price_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305370B22CC9511005A1A5F /* price_cell.swift */; };
+		9305371122CCE009005A1A5F /* oto_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305371022CCE009005A1A5F /* oto_controller.swift */; };
+		9305371322CCF535005A1A5F /* oto_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305371222CCF535005A1A5F /* oto_cell.swift */; };
 		9338695A22CAFA3100592E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338695922CAFA3100592E1A /* AppDelegate.swift */; };
 		9338695C22CAFA3100592E1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338695B22CAFA3100592E1A /* ViewController.swift */; };
 		9338695F22CAFA3100592E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9338695D22CAFA3100592E1A /* Main.storyboard */; };
@@ -18,10 +28,20 @@
 		9338697922CB104B00592E1A /* basic_ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338697822CB104B00592E1A /* basic_ui.swift */; };
 		9338697B22CB18BC00592E1A /* search_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338697A22CB18BC00592E1A /* search_view.swift */; };
 		9338697D22CB3AF200592E1A /* giaothong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338697C22CB3AF200592E1A /* giaothong.swift */; };
-		9338698022CB429C00592E1A /* tracific.json in Resources */ = {isa = PBXBuildFile; fileRef = 9338697F22CB429B00592E1A /* tracific.json */; };
+		9338698022CB429C00592E1A /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 9338697F22CB429B00592E1A /* Home.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930536FB22CC5508005A1A5F /* api_service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api_service.swift; sourceTree = "<group>"; };
+		930536FE22CC590D005A1A5F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		9305370022CC59B6005A1A5F /* Menu_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_cell.swift; sourceTree = "<group>"; };
+		9305370222CC6059005A1A5F /* Home_detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_detail.swift; sourceTree = "<group>"; };
+		9305370522CC86BC005A1A5F /* title_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = title_cell.swift; sourceTree = "<group>"; };
+		9305370722CC896B005A1A5F /* object_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object_cell.swift; sourceTree = "<group>"; };
+		9305370922CC915A005A1A5F /* des_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = des_cell.swift; sourceTree = "<group>"; };
+		9305370B22CC9511005A1A5F /* price_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = price_cell.swift; sourceTree = "<group>"; };
+		9305371022CCE009005A1A5F /* oto_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_controller.swift; sourceTree = "<group>"; };
+		9305371222CCF535005A1A5F /* oto_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_cell.swift; sourceTree = "<group>"; };
 		9338695622CAFA3100592E1A /* giao_thong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giao_thong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9338695922CAFA3100592E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9338695B22CAFA3100592E1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +57,7 @@
 		9338697822CB104B00592E1A /* basic_ui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic_ui.swift; sourceTree = "<group>"; };
 		9338697A22CB18BC00592E1A /* search_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = search_view.swift; sourceTree = "<group>"; };
 		9338697C22CB3AF200592E1A /* giaothong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giaothong.swift; sourceTree = "<group>"; };
-		9338697F22CB429B00592E1A /* tracific.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tracific.json; sourceTree = "<group>"; };
+		9338697F22CB429B00592E1A /* Home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930536FD22CC58EA005A1A5F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9305370022CC59B6005A1A5F /* Menu_cell.swift */,
+				930536FE22CC590D005A1A5F /* Menu.swift */,
+				9305370F22CCDFDE005A1A5F /* menu_center */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		9305370422CC8686005A1A5F /* Home_detail */ = {
+			isa = PBXGroup;
+			children = (
+				9305370222CC6059005A1A5F /* Home_detail.swift */,
+				9305370522CC86BC005A1A5F /* title_cell.swift */,
+				9305370722CC896B005A1A5F /* object_cell.swift */,
+				9305370922CC915A005A1A5F /* des_cell.swift */,
+				9305370B22CC9511005A1A5F /* price_cell.swift */,
+			);
+			path = Home_detail;
+			sourceTree = "<group>";
+		};
+		9305370F22CCDFDE005A1A5F /* menu_center */ = {
+			isa = PBXGroup;
+			children = (
+				9305371022CCE009005A1A5F /* oto_controller.swift */,
+				9305371222CCF535005A1A5F /* oto_cell.swift */,
+			);
+			path = menu_center;
+			sourceTree = "<group>";
+		};
 		9338694D22CAFA3100592E1A = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +125,7 @@
 				9338696F22CAFE1500592E1A /* Controller */,
 				9338695922CAFA3100592E1A /* AppDelegate.swift */,
 				9338695B22CAFA3100592E1A /* ViewController.swift */,
-				9338697F22CB429B00592E1A /* tracific.json */,
+				9338697F22CB429B00592E1A /* Home.json */,
 				9338695D22CAFA3100592E1A /* Main.storyboard */,
 				9338696022CAFA3400592E1A /* Assets.xcassets */,
 				9338696C22CAFBDB00592E1A /* SWRevealViewController.h */,
@@ -89,6 +140,7 @@
 		9338696F22CAFE1500592E1A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				930536FD22CC58EA005A1A5F /* Menu */,
 				9338697022CAFE1F00592E1A /* Home */,
 			);
 			path = Controller;
@@ -99,6 +151,7 @@
 			children = (
 				9338697322CB015300592E1A /* Home.swift */,
 				9338697522CB09D200592E1A /* Home_cell.swift */,
+				9305370422CC8686005A1A5F /* Home_detail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -109,6 +162,7 @@
 				9338697822CB104B00592E1A /* basic_ui.swift */,
 				9338697C22CB3AF200592E1A /* giaothong.swift */,
 				9338697A22CB18BC00592E1A /* search_view.swift */,
+				930536FB22CC5508005A1A5F /* api_service.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,7 +228,7 @@
 			files = (
 				9338696422CAFA3400592E1A /* LaunchScreen.storyboard in Resources */,
 				9338696122CAFA3400592E1A /* Assets.xcassets in Resources */,
-				9338698022CB429C00592E1A /* tracific.json in Resources */,
+				9338698022CB429C00592E1A /* Home.json in Resources */,
 				9338695F22CAFA3100592E1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,9 +244,19 @@
 				9338695A22CAFA3100592E1A /* AppDelegate.swift in Sources */,
 				9338697D22CB3AF200592E1A /* giaothong.swift in Sources */,
 				9338697922CB104B00592E1A /* basic_ui.swift in Sources */,
+				9305371322CCF535005A1A5F /* oto_cell.swift in Sources */,
+				930536FF22CC590D005A1A5F /* Menu.swift in Sources */,
 				9338697422CB015300592E1A /* Home.swift in Sources */,
+				930536FC22CC5508005A1A5F /* api_service.swift in Sources */,
+				9305370A22CC915A005A1A5F /* des_cell.swift in Sources */,
+				9305370322CC6059005A1A5F /* Home_detail.swift in Sources */,
+				9305371122CCE009005A1A5F /* oto_controller.swift in Sources */,
+				9305370122CC59B6005A1A5F /* Menu_cell.swift in Sources */,
+				9305370622CC86BC005A1A5F /* title_cell.swift in Sources */,
 				9338697B22CB18BC00592E1A /* search_view.swift in Sources */,
 				9338697622CB09D200592E1A /* Home_cell.swift in Sources */,
+				9305370C22CC9511005A1A5F /* price_cell.swift in Sources */,
+				9305370822CC896B005A1A5F /* object_cell.swift in Sources */,
 				9338696E22CAFBDB00592E1A /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
