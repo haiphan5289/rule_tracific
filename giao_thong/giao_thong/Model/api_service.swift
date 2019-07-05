@@ -78,4 +78,61 @@ class api_service {
             print(err)
         }
     }
+    func get_data_menu(completion: ([menu]) -> [menu]){
+        var array_json: [menu] = [menu]()
+        let path = Bundle.main.path(forResource: "menu", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        do {
+            let data = try Data(contentsOf: url)
+            let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+            for temp in json as! [[String:Any]] {
+                let img = temp["img"] as! String
+                let sub = temp["sub"] as! String
+                let user: menu = menu(img: img, sub_title: sub)
+                array_json.append(user)
+            }
+            completion(array_json)
+        }catch let err as NSError {
+            print(err)
+        }
+        
+    }
+    func get_data_bien_bao(completion: ([bien_bao_object]) -> [bien_bao_object]){
+        var array_json: [bien_bao_object] = [bien_bao_object]()
+        let path = Bundle.main.path(forResource: "bien_bao", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        do {
+            let data = try Data(contentsOf: url)
+            let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+            for temp in json as! [[String:Any]] {
+                let img = temp["img"] as! String
+                let sub = temp["sub"] as! String
+                let user: bien_bao_object = bien_bao_object(img: img, text: sub)
+                array_json.append(user)
+            }
+            completion(array_json)
+        }catch let err as NSError {
+            print(err)
+        }
+        
+    }
+    func get_data_phone(completion: ([phone]) -> [phone]){
+        var array_json: [phone] = [phone]()
+        let path = Bundle.main.path(forResource: "phone", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        do {
+            let data = try Data(contentsOf: url)
+            let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+            for temp in json as! [[String:Any]] {
+                let img = temp["img"] as! String
+                let sub = temp["sub"] as! String
+                let user: phone = phone(title: img, sub: sub)
+                array_json.append(user)
+            }
+            completion(array_json)
+        }catch let err as NSError {
+            print(err)
+        }
+        
+    }
 }

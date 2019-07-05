@@ -56,10 +56,6 @@ class Home_cell: UITableViewCell {
 //        get_data_rutle_from_home()
     }
     
-    func get_data_rutle_from_home(){
-
-    }
-    
     //setup - price
     func price_home_cell_setup_autolayout(){
 //        price_home_cell.backgroundColor = UIColor.red
@@ -121,5 +117,7 @@ class Home_cell: UITableViewCell {
         image_cell_home.heightAnchor.constraint(equalToConstant: 84).isActive = true
         image_cell_home.widthAnchor.constraint(equalToConstant: 84).isActive = true
     }
+    
+
     
 }

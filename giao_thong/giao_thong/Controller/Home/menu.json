@@ -1,0 +1,33 @@
+[{
+  "img": "motorbike",
+  "sub": "Phạt xe máy"
+    
+},
+{
+    "img": "car",
+    "sub": "Phạt ô tô"
+},
+{
+    "img": "phuong_tien_bus",
+    "sub": "Phạt xe khách"
+},
+{
+    "img": "phuong_tien_truck",
+    "sub": "Phạt xe tải"
+},
+{
+    "img": "car_motorbike",
+    "sub": "Phạt khác"
+},
+{
+    "img": "luu_thong",
+    "sub": "Biển báo"
+},
+{
+    "img": "phone_call",
+    "sub": "Đường dây nóng"
+},
+{
+    "img": "bien_bao",
+    "sub": "Biển báo"
+}]

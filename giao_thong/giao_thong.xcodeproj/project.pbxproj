@@ -17,6 +17,21 @@
 		9305370C22CC9511005A1A5F /* price_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305370B22CC9511005A1A5F /* price_cell.swift */; };
 		9305371122CCE009005A1A5F /* oto_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305371022CCE009005A1A5F /* oto_controller.swift */; };
 		9305371322CCF535005A1A5F /* oto_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305371222CCF535005A1A5F /* oto_cell.swift */; };
+		930A236422CEF1A10076D944 /* bien_bao_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A236322CEF1A10076D944 /* bien_bao_cell.swift */; };
+		930A236822CF0A530076D944 /* bien_bao.json in Resources */ = {isa = PBXBuildFile; fileRef = 930A236722CF0A530076D944 /* bien_bao.json */; };
+		930A236B22CF20EE0076D944 /* hot_line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A236A22CF20EE0076D944 /* hot_line.swift */; };
+		930A236D22CF26C80076D944 /* hot_line_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A236C22CF26C80076D944 /* hot_line_cell.swift */; };
+		930A236F22CF37C00076D944 /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 930A236E22CF37C00076D944 /* phone.json */; };
+		9310E27A22CDD48000D1C5A6 /* Home_br.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E27922CDD48000D1C5A6 /* Home_br.swift */; };
+		9310E28222CDE12C00D1C5A6 /* Home_br_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E28122CDE12C00D1C5A6 /* Home_br_cell.swift */; };
+		9310E28422CDEC7000D1C5A6 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 9310E28322CDEC7000D1C5A6 /* menu.json */; };
+		9310E28622CE356D00D1C5A6 /* oto_detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E28522CE356D00D1C5A6 /* oto_detail.swift */; };
+		9310E28922CE35A800D1C5A6 /* oto_title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E28822CE35A800D1C5A6 /* oto_title.swift */; };
+		9310E28B22CE35B500D1C5A6 /* oto_object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E28A22CE35B500D1C5A6 /* oto_object.swift */; };
+		9310E28D22CE35CC00D1C5A6 /* oto_des.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E28C22CE35CC00D1C5A6 /* oto_des.swift */; };
+		9310E28F22CE35DB00D1C5A6 /* oto_price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E28E22CE35DB00D1C5A6 /* oto_price.swift */; };
+		9310E29322CE38E300D1C5A6 /* bien_bao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310E29122CE38E300D1C5A6 /* bien_bao.swift */; };
+		9310E29422CE38E300D1C5A6 /* bien_bao.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9310E29222CE38E300D1C5A6 /* bien_bao.xib */; };
 		9338695A22CAFA3100592E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338695922CAFA3100592E1A /* AppDelegate.swift */; };
 		9338695C22CAFA3100592E1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9338695B22CAFA3100592E1A /* ViewController.swift */; };
 		9338695F22CAFA3100592E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9338695D22CAFA3100592E1A /* Main.storyboard */; };
@@ -42,6 +57,21 @@
 		9305370B22CC9511005A1A5F /* price_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = price_cell.swift; sourceTree = "<group>"; };
 		9305371022CCE009005A1A5F /* oto_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_controller.swift; sourceTree = "<group>"; };
 		9305371222CCF535005A1A5F /* oto_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_cell.swift; sourceTree = "<group>"; };
+		930A236322CEF1A10076D944 /* bien_bao_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bien_bao_cell.swift; sourceTree = "<group>"; };
+		930A236722CF0A530076D944 /* bien_bao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bien_bao.json; sourceTree = "<group>"; };
+		930A236A22CF20EE0076D944 /* hot_line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hot_line.swift; sourceTree = "<group>"; };
+		930A236C22CF26C80076D944 /* hot_line_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hot_line_cell.swift; sourceTree = "<group>"; };
+		930A236E22CF37C00076D944 /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phone.json; sourceTree = "<group>"; };
+		9310E27922CDD48000D1C5A6 /* Home_br.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_br.swift; sourceTree = "<group>"; };
+		9310E28122CDE12C00D1C5A6 /* Home_br_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_br_cell.swift; sourceTree = "<group>"; };
+		9310E28322CDEC7000D1C5A6 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		9310E28522CE356D00D1C5A6 /* oto_detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_detail.swift; sourceTree = "<group>"; };
+		9310E28822CE35A800D1C5A6 /* oto_title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_title.swift; sourceTree = "<group>"; };
+		9310E28A22CE35B500D1C5A6 /* oto_object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_object.swift; sourceTree = "<group>"; };
+		9310E28C22CE35CC00D1C5A6 /* oto_des.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_des.swift; sourceTree = "<group>"; };
+		9310E28E22CE35DB00D1C5A6 /* oto_price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oto_price.swift; sourceTree = "<group>"; };
+		9310E29122CE38E300D1C5A6 /* bien_bao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bien_bao.swift; sourceTree = "<group>"; };
+		9310E29222CE38E300D1C5A6 /* bien_bao.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bien_bao.xib; sourceTree = "<group>"; };
 		9338695622CAFA3100592E1A /* giao_thong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giao_thong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9338695922CAFA3100592E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9338695B22CAFA3100592E1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +106,6 @@
 			children = (
 				9305370022CC59B6005A1A5F /* Menu_cell.swift */,
 				930536FE22CC590D005A1A5F /* Menu.swift */,
-				9305370F22CCDFDE005A1A5F /* menu_center */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -93,13 +122,47 @@
 			path = Home_detail;
 			sourceTree = "<group>";
 		};
-		9305370F22CCDFDE005A1A5F /* menu_center */ = {
+		9305370F22CCDFDE005A1A5F /* Oto */ = {
 			isa = PBXGroup;
 			children = (
 				9305371022CCE009005A1A5F /* oto_controller.swift */,
 				9305371222CCF535005A1A5F /* oto_cell.swift */,
+				9310E28722CE357200D1C5A6 /* oto_detail */,
 			);
-			path = menu_center;
+			path = Oto;
+			sourceTree = "<group>";
+		};
+		930A236922CF20CC0076D944 /* hot_lines */ = {
+			isa = PBXGroup;
+			children = (
+				930A236A22CF20EE0076D944 /* hot_line.swift */,
+				930A236C22CF26C80076D944 /* hot_line_cell.swift */,
+				930A236E22CF37C00076D944 /* phone.json */,
+			);
+			path = hot_lines;
+			sourceTree = "<group>";
+		};
+		9310E28722CE357200D1C5A6 /* oto_detail */ = {
+			isa = PBXGroup;
+			children = (
+				9310E28522CE356D00D1C5A6 /* oto_detail.swift */,
+				9310E28822CE35A800D1C5A6 /* oto_title.swift */,
+				9310E28A22CE35B500D1C5A6 /* oto_object.swift */,
+				9310E28C22CE35CC00D1C5A6 /* oto_des.swift */,
+				9310E28E22CE35DB00D1C5A6 /* oto_price.swift */,
+			);
+			path = oto_detail;
+			sourceTree = "<group>";
+		};
+		9310E29022CE38A300D1C5A6 /* Bien_bao */ = {
+			isa = PBXGroup;
+			children = (
+				9310E29122CE38E300D1C5A6 /* bien_bao.swift */,
+				930A236322CEF1A10076D944 /* bien_bao_cell.swift */,
+				930A236722CF0A530076D944 /* bien_bao.json */,
+				9310E29222CE38E300D1C5A6 /* bien_bao.xib */,
+			);
+			path = Bien_bao;
 			sourceTree = "<group>";
 		};
 		9338694D22CAFA3100592E1A = {
@@ -140,8 +203,11 @@
 		9338696F22CAFE1500592E1A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				930536FD22CC58EA005A1A5F /* Menu */,
 				9338697022CAFE1F00592E1A /* Home */,
+				9305370F22CCDFDE005A1A5F /* Oto */,
+				930A236922CF20CC0076D944 /* hot_lines */,
+				9310E29022CE38A300D1C5A6 /* Bien_bao */,
+				930536FD22CC58EA005A1A5F /* Menu */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +217,9 @@
 			children = (
 				9338697322CB015300592E1A /* Home.swift */,
 				9338697522CB09D200592E1A /* Home_cell.swift */,
+				9310E27922CDD48000D1C5A6 /* Home_br.swift */,
+				9310E28122CDE12C00D1C5A6 /* Home_br_cell.swift */,
+				9310E28322CDEC7000D1C5A6 /* menu.json */,
 				9305370422CC8686005A1A5F /* Home_detail */,
 			);
 			path = Home;
@@ -226,10 +295,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930A236822CF0A530076D944 /* bien_bao.json in Resources */,
 				9338696422CAFA3400592E1A /* LaunchScreen.storyboard in Resources */,
 				9338696122CAFA3400592E1A /* Assets.xcassets in Resources */,
+				9310E29422CE38E300D1C5A6 /* bien_bao.xib in Resources */,
+				930A236F22CF37C00076D944 /* phone.json in Resources */,
 				9338698022CB429C00592E1A /* Home.json in Resources */,
 				9338695F22CAFA3100592E1A /* Main.storyboard in Resources */,
+				9310E28422CDEC7000D1C5A6 /* menu.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,23 +314,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				9338695C22CAFA3100592E1A /* ViewController.swift in Sources */,
+				9310E28622CE356D00D1C5A6 /* oto_detail.swift in Sources */,
+				930A236422CEF1A10076D944 /* bien_bao_cell.swift in Sources */,
+				930A236D22CF26C80076D944 /* hot_line_cell.swift in Sources */,
+				9310E29322CE38E300D1C5A6 /* bien_bao.swift in Sources */,
 				9338695A22CAFA3100592E1A /* AppDelegate.swift in Sources */,
 				9338697D22CB3AF200592E1A /* giaothong.swift in Sources */,
 				9338697922CB104B00592E1A /* basic_ui.swift in Sources */,
+				9310E28D22CE35CC00D1C5A6 /* oto_des.swift in Sources */,
+				9310E28222CDE12C00D1C5A6 /* Home_br_cell.swift in Sources */,
 				9305371322CCF535005A1A5F /* oto_cell.swift in Sources */,
 				930536FF22CC590D005A1A5F /* Menu.swift in Sources */,
 				9338697422CB015300592E1A /* Home.swift in Sources */,
+				9310E28B22CE35B500D1C5A6 /* oto_object.swift in Sources */,
+				9310E28922CE35A800D1C5A6 /* oto_title.swift in Sources */,
 				930536FC22CC5508005A1A5F /* api_service.swift in Sources */,
+				930A236B22CF20EE0076D944 /* hot_line.swift in Sources */,
 				9305370A22CC915A005A1A5F /* des_cell.swift in Sources */,
 				9305370322CC6059005A1A5F /* Home_detail.swift in Sources */,
 				9305371122CCE009005A1A5F /* oto_controller.swift in Sources */,
 				9305370122CC59B6005A1A5F /* Menu_cell.swift in Sources */,
 				9305370622CC86BC005A1A5F /* title_cell.swift in Sources */,
 				9338697B22CB18BC00592E1A /* search_view.swift in Sources */,
+				9310E28F22CE35DB00D1C5A6 /* oto_price.swift in Sources */,
 				9338697622CB09D200592E1A /* Home_cell.swift in Sources */,
 				9305370C22CC9511005A1A5F /* price_cell.swift in Sources */,
 				9305370822CC896B005A1A5F /* object_cell.swift in Sources */,
 				9338696E22CAFBDB00592E1A /* SWRevealViewController.m in Sources */,
+				9310E27A22CDD48000D1C5A6 /* Home_br.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

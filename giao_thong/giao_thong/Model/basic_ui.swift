@@ -24,3 +24,4 @@ extension UITableViewCell {
         self.layoutMargins = UIEdgeInsets.zero
     }
 }
+
